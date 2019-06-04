@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg{
+		
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container ">
+		<h1 class="task">Найди 6 кладов</h1>
+		<h1>Score: <span class="score">0</span></h1>
+		<!--ряд с буквами-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-3  bg-warning text-center border"></div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-warning text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>6</h4>
+			</div>
+		</div>
+		<!--первый ряд-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 bam px-5 py-4 bg border "></div>
+			<div class="col-1 klad px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+		</div>
+		<!--второй ряд-->
+		<div class="row govno">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1 klad px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 klad px-5 py-4 bg border "></div>
+			<div class="col-1 bam px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border"></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+		</div>
+		<!--третий ряд-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 bam px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>
+			<div class="col-1 klad px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>		
+		</div>
+		<!--четвертый ряд-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1 mem px-5 py-4 bg border"></div>
+			<div class="col-1 mem px-5 py-4 bg border"></div>
+			<div class="col-1 mem px-5 py-4 bg border"></div>
+			<div class="col-1 mem px-5 py-4 bg border"></div>
+			<div class="col-1 mem px-5 py-4 bg border"></div>
+			<div class="col-1 bam px-5 py-4 bg border"></div>
+		</div>
+		<!--пятый ряд-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 klad px-5 py-4  bg border "></div>
+			<div class="col-1 bam px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4  bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+		</div>
+		<!--шестой ряд-->
+		<div class="row govno">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 klad px-5 py-4 bg border "></div>
+			<div class="col-1 bam px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+			<div class="col-1 mem px-5 py-4 bg border "></div>
+		</div>
+	</div>
+<script type="text/javascript">
+
+		let s4ot = 0
+		let kaka1 = document.querySelectorAll(".mem")
+		let kaka2 = document.querySelectorAll(".bam")
+		let kaka3 = document.querySelectorAll(".klad")
+		let kaka4 = document.querySelectorAll(".govno")
+		
+		let kaka5 = function(){
+			for(let index = 0; index<7; index = index + 1){
+				kaka4[index].style.display = "none"
+			}
+		}
+		setTimeout(kaka5,7000)
+
+		for(let index = 0; index<22; index = index + 1){
+		kaka1[index].onclick = function (){
+			kaka1[index].style.backgroundImage = "url(mem.jpg)"
+			kaka1[index].style.backgroundSize = "100% 100%"
+			}
+		}
+
+		for(let index = 0; index<6; index = index + 1){
+		kaka2[index].onclick = function (){
+			kaka2[index].style.backgroundImage = "url(bang.png)"
+			kaka2[index].style.backgroundSize = "100% 100%"
+			s4ot -= 1
+			document.querySelector(".score").innerHTML = s4ot
+			}
+		}
+
+		for(let index = 0; index<6; index = index + 1){
+		kaka3[index].onclick = function (){
+			kaka3[index].style.backgroundImage = "url(treasure.png)"
+			kaka3[index].style.backgroundSize = "100% 100%"
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+			}
+		}
+
+
+</script>
+</body>
+</html>
